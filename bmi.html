@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI 計算器</title>
+
+    <link rel="icon" href="./img/web-icon.png">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/bmi.css" />
+    
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+</head>
+ 
+<body>
+  <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex 計算器</h3>
+  <form class="form" id="form" onsubmit="return validateForm()">
+    <!-- <div class="row row-one">
+        <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">年齡</p>
+        <label class="container">
+            <input type="radio" name="radio" id="f"><p class="text">女性</p>
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            <input type="radio" name="radio" id="m"><p class="text">男性</p>
+            <span class="checkmark"></span>
+        </label>
+    </div> -->
+
+    <!-- BMI -->
+    <!-- https://health99.hpa.gov.tw/onlineQuiz/bmi -->
+    
+    <div class="row row-two">
+        <input type="text" class="text-input" id="height" autocomplete="off" required><p class="text">身高 (cm)</p>
+        <input type="text" class="text-input" id="weight" autocomplete="off" required><p class="text">體重 (kg)</p>
+    </div>
+    <button type="button" id="submit">查看結果</button>
+  </form>
+
+  <script src="./js/bmi.js"></script>
+</body>
+</html>
