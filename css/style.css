@@ -1,5 +1,11 @@
 a{
     text-decoration: none;
+    color: #3D8361;
+    font-weight: bolder;
+}
+
+.marketing{
+    margin-top: 90px;
 }
 
 .bd-placeholder-img {
@@ -13,7 +19,7 @@ a{
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
-}
+    }
 }
 
 .b-example-divider {
