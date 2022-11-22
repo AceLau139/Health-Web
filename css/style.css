@@ -81,3 +81,23 @@ a{
     width: 560px;
     height: 350px;
 }
+
+.featurette-heading{
+    margin: 30px 0;
+}
+
+/* footer */
+.top{
+    position: fixed;
+    width: 2.5%;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 99;
+    border-radius: 100%;
+    color: #3D8361;
+}
+
+.top:hover{
+    color: #fefefe;
+    transition-duration:0.5s;
+}
