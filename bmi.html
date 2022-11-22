@@ -1,45 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
- 
+<!doctype html>
+<html lang="cn">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI 計算器</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.104.2">
 
-    <link rel="icon" href="./img/web-icon.png">
+<title>BMI 計算器</title>
+<link rel="icon" href="./img/web-icon.png">
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="./css/bmi.css" />
-    
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+<!-- Bootsrap -->
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/carousel.css" rel="stylesheet">
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/bmi.css" />
+
+<!--Google Font-->
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
- 
+
 <body>
-  <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex 計算器</h3>
-  <form class="form" id="form" onsubmit="return validateForm()">
-    <!-- <div class="row row-one">
-        <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">年齡</p>
-        <label class="container">
-            <input type="radio" name="radio" id="f"><p class="text">女性</p>
-            <span class="checkmark"></span>
-        </label>
-        <label class="container">
-            <input type="radio" name="radio" id="m"><p class="text">男性</p>
-            <span class="checkmark"></span>
-        </label>
-    </div> -->
-
-    <!-- BMI -->
-    <!-- https://health99.hpa.gov.tw/onlineQuiz/bmi -->
     
-    <div class="row row-two">
-        <input type="text" class="text-input" id="height" autocomplete="off" required><p class="text">身高 (cm)</p>
-        <input type="text" class="text-input" id="weight" autocomplete="off" required><p class="text">體重 (kg)</p>
-    </div>
-    <button type="button" id="submit">查看結果</button>
-  </form>
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="./img/web-icon.png" style="width: 80px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <script src="./js/bmi.js"></script>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#article" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              主題文章
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="health.html">都市健康</a></li>
+              <li><a class="dropdown-item" href="food.html">健康飲食</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="bmi.html">BMI計算器</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex 計算器</h3>
+    <form class="form" id="form" onsubmit="return validateForm()">
+        <!-- <div class="row row-one">
+            <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">年齡</p>
+            <label class="container">
+                <input type="radio" name="radio" id="f"><p class="text">女性</p>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio" id="m"><p class="text">男性</p>
+                <span class="checkmark"></span>
+            </label>
+        </div> -->
+    
+        <!-- BMI -->
+        <!-- https://health99.hpa.gov.tw/onlineQuiz/bmi -->
+        
+        <div class="flex-container">
+            <input type="text" class="text-input" id="height" autocomplete="off" required><p class="text">身高 (cm)</p>
+            <input type="text" class="text-input" id="weight" autocomplete="off" required><p class="text">體重 (kg)</p>
+        </div>
+        <button type="button" id="submit">查看結果</button>
+    </form>
+      
+        
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <a href="#"><img src="https://selflearningsuccess.com/wp-content/plugins/wpfront-scroll-top/images/icons/114.png" alt="" class="top"></a>
+    
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bmi.js"></script>
+
 </body>
 </html>

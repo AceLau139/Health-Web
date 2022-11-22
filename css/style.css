@@ -4,6 +4,12 @@ a{
     font-weight: bolder;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .marketing{
     margin-top: 90px;
 }

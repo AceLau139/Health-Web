@@ -8,8 +8,9 @@ body {
     margin: 0;
     height: 100vh;
     padding: 0;
+    margin-top: 100px;
     border: 0;
-    background: linear-gradient(to bottom right, #91f2ff, #edf9c2);
+    /* background: linear-gradient(to bottom right, #91f2ff, #edf9c2); */
 }
 
 .form {
